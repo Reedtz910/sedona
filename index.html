@@ -3,17 +3,36 @@
     <head>
         <meta charset="utf-8">
         <title>Sedona</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
-            <ul>
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="media.html">Фото и видео</a></li>
-                <li><a href="map.html">Карта штата</a></li>
-                <li><a href="hotels.html">Гостиницы</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="info.html">Информация</a></li>
+                    <li><a href="media.html">Фото и видео</a></li>
+                    <li><a href="map.html">Карта штата</a></li>
+                    <li><a href="hotels.html">Гостиницы</a></li>
+                </ul>
+            </nav> 
+            <div>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Логотип" width="140" height="70">
+                </a>
+            </div>
         </header>
         <main>
+            <div>
+                <a href="#">
+                    <img src="img/welcome.svg" alt="Добро пожаловать" width="460px" height="350px">
+                </a>
+                <a href="#">
+                    <img src="img/background photo.jpg" width="1200px" height="510px">
+                </a>
+                <a href="#">
+                    <img src="img/polygon.png" width="1200" height="59px"> 
+                </a>
+            </div>
             <h1>Седона</h1>
             <p>Седона - небольшой городок в аризоне, <br> 
                 заслуживающий большего! <p>
@@ -25,27 +44,33 @@
                         <p>№1<br>
                         Седона - не аттракцион для туристов, <br>
                         там течет своя жизнь</p>
-                        <img src="#">
+                        <img src="img/city.jpg" alt="Фото города" width="800" height="256">
                         <ul>
                             <li>
-                                <h3>Жилье</h3>
-                                <p>Рекомендуем пожить в настоящем<br>
-                                мотеле, всё как в кино!</p>
+                                <div class="reason reason-icon-home">
+                                    <h3>Жилье</h3>
+                                    <p>Рекомендуем пожить в настоящем<br>
+                                    мотеле, всё как в кино!</p>
+                                </div>
                             </li>
                             <li>
-                                <h3>Еда</h3>
-                                <p>Всегда заказывайся фирменный бургер<br>
-                                вы не разочаруетесь!</p>
+                                <div class="reason reason-icon-food">
+                                    <h3>Еда</h3>
+                                    <p>Всегда заказывайся фирменный бургер<br>
+                                    вы не разочаруетесь!</p>
+                                </div>
                             </li>
                             <li>
-                                <h3>Сувениры</h3>
-                                <p>Не только китайского, но и местного<br>
-                                производства!</p>
+                                <div class="reason reason-icon-gift"> 
+                                    <h3>Сувениры</h3>
+                                    <p>Не только китайского, но и местного<br>
+                                    производства!</p>
+                                </div>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <img src=#>
+                        <img src="img/devils_bridge.jpg" alt="Мост Дьявола" width="800" height="256">
                         <h3>Там есть<br>
                         мост дьявола</h3>
                         <p>№2<br>
@@ -80,15 +105,16 @@
                 <p>Укажите предполагаемые даты поездки,<br>
                 и мы покажем вам лучшие предложениея гостиниц в седоне</p>
                 <!-- form -->
+                <img src="img/map.jpg" alt="Карта" width="1200px" height="475px">
                 <button type="button">Найти</button>           
             </section>
         </main>
         <footer>
             <p>#visitsedona<br>
             тел.: +7(495)666-02-66</p>
-            <a href="#">Twitter</a>
-            <a href="#">Facebook</a>
-            <a href="#">Youtube</a>
+            <a href="#" class="social_btn social_btn-tw"><span>Twitter</span></a>
+            <a href="#" class="social_btn social_btn-fb"><span>Facebook</span></a>
+            <a href="#" class="social_btn social_btn-yt"><span>Youtube</span></a>
             <p>
                 Website by
                 <a href="https://htmlacademy.ru">HTML Academy</a>
