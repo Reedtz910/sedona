@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Седона</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="info.html">Информация</a></li>
+                    <li><a href="media.html">Фото и видео</a></li>
+                    <li><a href="map.html">Карта штата</a></li>
+                    <li><a href="hotels.html">Гостиницы</a></li>
+                </ul>
+            </nav> 
+            <div>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Логотип сайта Седона" width="140" height="70">
+                </a>
+            </div>
+        </header>
+        <main>
+            <section class="abc">
+                <fieldset>
+                    <legend>Инфрастрактура:</legend>
+                    <ul>
+                        <li>
+                            <label for="filter-swimming-pool">Бассейн</label>
+                            <input type="checkbox" name="swimming-pool"
+                                    id="filter-swimming-pool" checked>
+                        </li>
+                        <li>
+                            <label for="filter-parking">Парковка</label>
+                            <input type="checkbox" name="parking"
+                                    id="filter-parking">
+                        </li>
+                        <li>
+                            <label for="filter-Wi-fi">Wi-fi</label>
+                            <input type="checkbox" name="wi-fi"
+                                    id="filter-wi-fi">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <ul>
+                        <li>
+                            <label for="filter-hotel">Гостиница</label>
+                            <input type="checkbox" name="hotel"
+                                    id="filter-hotel" checked>
+                        </li>
+                        <li>
+                            <label for="filter-motel">Мотель</label>
+                            <input type="checkbox" name="motel"
+                                    id="filter-motel" checked>
+                        </li>
+                        <li>
+                            <label for="filter-apartments">Апартаменты</label>
+                            <input type="checkbox" name="apartments"
+                                    id="filter-apartments" checked>
+                        </li>
+                    </ul>
+                </fieldset>
+                <!-- double range form -->
+                <button type="button">Показать</button>
+            </section>
+            <form>
+                <fieldset>
+                    <legend>Сортировка:</legend>
+                    <ul>
+                        <li>
+                            <label for="price-priority">По цене</label>
+                            <input type="radio" id="price-priority" 
+                                    name="priority" value="price-priority">
+                        </li>
+                        <li>
+                            <label for="type-priority">По типу</label>
+                            <input type="radio" id="type-priority" 
+                                    name="priority" value="type-priority">
+                        </li>
+                        <li>
+                            <label for="rate-priority">По рейтингу</label>
+                            <input type="radio" id="rate-priority" 
+                                    name="priority" value="rate-priority">
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+            <section>
+                <ul>
+                    <li>
+                        <a href="#">Amara resort & spa</a>
+                        <img src="img/amara.jpg" alt="Картинка курорта Amara resort & spa">
+                        <p>Гостиница</p>
+                        <p>От 4000 р.</p>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                        <img src="img/star.svg" alt="">
+                        <p>Рейтинг: 8,5</p>
+                    </li>
+                    <li>
+                        <a href="#">Desert quail inn</a>
+                        <img src="img/desert.jpg" alt="Картинка мотеля Desert quail inn ">
+                        <p>Мотель</p>
+                        <p>От 3000 р.</p>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                        <img src="img/star.svg" alt="">
+                        <p>Рейтинг: 8,9</p>
+                    </li>
+                    <li>
+                        <a href="#">Villas at poco diablo</a>
+                        <img src="img/villas.jpg" alt="Картинка апартаментов Villas at poco diablo">
+                        <p>Апартаменты</p>
+                        <p>От 2000р</p>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                        <img src="img/star.svg" alt="">
+                        <p>Рейтинг: 9,2</p>
+                    </li>        
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>#visitsedona<br>
+            тел.: +7(495)666-02-66</p>
+            <a href="#" class="social_btn social_btn-tw" aria-label="Твиттер"></a>
+            <a href="#" class="social_btn social_btn-fb" aria-label="Фейсбук"></a>
+            <a href="#" class="social_btn social_btn-yt" aria-label="Ютуб"></a>
+            <p>
+                Website by
+                <a href="https://htmlacademy.ru" class="dev_btn" aria-label="Логотип HTML Academy"></a>
+            </p>
+        </footer>
+    </body>
+</html>

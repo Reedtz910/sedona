@@ -1,0 +1,62 @@
+.reason {
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.reason-icon-food {
+    background: #ffffff  url("../img/icon-food.png") no-repeat center 80px;
+}
+
+.reason-icon-home {
+    background: #ffffff  url("../img/icon-home.png") no-repeat center 80px;
+}
+
+.reason-icon-gift {
+    background: #ffffff  url("../img/icon-gift.png") no-repeat center 80px;
+}
+
+.social_btn {
+    width: 46px;
+    height: 47px;
+    position: relative;
+    display: block;
+    margin-top: 6px;
+}
+
+.social_btn-tw {
+    background: #81b3d2 url("../img/t.png") no-repeat center;
+}
+
+.social_btn-fb {
+    background: #81b3d2 url("../img/fb-icon.png") no-repeat center;
+}
+
+.social_btn-yt {
+    background: #81b3d2 url("../img/youtube.png") no-repeat center;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
+
+.dev_btn {
+    width: 115px;
+    height: 40px;
+    position: relative;
+    background:#ffffff url("../img/logo-html.png") no-repeat center;
+    display: block;
+}
+
+.abc {
+    background: url("../img/blured-background.jpg") no-repeat center;
+    height: 220px;
+    weight: 1200px;
+}
