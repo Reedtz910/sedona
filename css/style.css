@@ -1,19 +1,410 @@
+/* Fonts */
+
+/* pt-sans-regular - latin_cyrillic */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/pt-sans-v12-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local('PT Sans'), local('PTSans-Regular'),
+         url('../fonts/pt-sans-v12-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/pt-sans-v12-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/pt-sans-v12-latin_cyrillic-regular.svg#PTSans') format('svg'); /* Legacy iOS */
+  }
+  /* pt-sans-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/pt-sans-v12-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: local('PT Sans Bold'), local('PTSans-Bold'),
+         url('../fonts/pt-sans-v12-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/pt-sans-v12-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/pt-sans-v12-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/pt-sans-v12-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/pt-sans-v12-latin_cyrillic-700.svg#PTSans') format('svg'); /* Legacy iOS */
+  }
+
+/* Main styles */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+html, 
+body {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'PT Sans', Arial, sans-serif;
+    color: #000000;
+    
+    background-color: #f2f2f2;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.header, .main, .footer {
+    display: block;
+    width: 1200px;
+    margin: 0px auto;
+
+    background-color: #ffffff;
+    box-shadow: 0px 10px 10px #888888;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+.navigation-list {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 239px;
+    height: 56px;
+    font-weight: bold;
+    line-height: 21px;
+}
+
+.logo {
+    margin-top: auto;
+}
+
+.navigation a:hover {
+    color: #9ac2db;
+}
+
+.navigation a:active {
+    color: #b2b2b2;
+}
+
+.navigation .current-page {
+    color: #766357;
+}
+
+/* Background */
+
+.polygon {
+    display: block;
+    
+    height: 57px;
+    background-image: url(../img/polygon.png);
+    background-size: cover;
+}
+
+.background {
+    display: block;
+
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center -60px;
+    background-size: cover;
+    text-align: center;
+    padding-top: 76px;
+}
+
+.welcome {
+    padding-bottom: 15px;
+}
+
+/* Welcome title and reason title */
+
+.welcome-title {
+    height: 216px;
+}
+
+.title {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-top: 61px;
+}
+
 .reason {
+
+    line-height: 26px;
+    color: #333333;
+}
+
+/* Reasons list */
+
+.reason-item.blue {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    color: #ffffff;
+    margin-left: -40px;
+}
+
+.reason-wrapper {
     width: 400px;
-    height: 300px;
-    position: relative;
+    text-align: center;
+    background-color: #81b3d2;
+    background-size: 400px 256px;
 }
 
-.reason-icon-food {
-    background: #ffffff  url("../img/icon-food.png") no-repeat center 80px;
+.reason-wrapper h3 {
+    font-size: 21px;
+    font-weight: bold;
+
+    padding-top: 46px;
+    margin: 0 auto;
+    width: 180px;
 }
 
-.reason-icon-home {
-    background: #ffffff  url("../img/icon-home.png") no-repeat center 80px;
+.reason-wrapper p {
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.reason-icon-gift {
-    background: #ffffff  url("../img/icon-gift.png") no-repeat center 80px;
+.reason-number::before {
+    content: "- ";
+}
+
+.reason-number::after {
+    content: " -";
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    
+}
+
+.reason-item {
+    text-align: center;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 400px;
+    height: 330px;
+    color: #000000;
+}
+
+.reason-item h3 {
+    font-size: 21px;
+}
+
+.reason-item p {
+    color: #333333;
+}
+
+.reason-wrapper p {
+    color: #ffffff;
+}
+
+.feature-icon-home {
+    width: 75px;
+    height: 72px;
+    background-image: url("../img/icon-home.png");
+}
+
+.feature-icon-food {
+    width: 74px;
+    height: 70px;
+    background-image: url("../img/icon-food.png");
+}
+
+.feature-icon-gift {
+    width: 64px;
+    height: 76px;
+    background-image: url("../img/icon-gift.png");
+}
+
+.reason-list {
+    width: 1240px;
+    height: 256px;
+    margin-left: -80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reason-item.grey {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 400px;
+    height: 256px;
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+/* Booking form */
+
+.form-title {
+    margin-top: 43px;
+    margin-bottom: 52px;
+}
+
+.form-title h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.form-title p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.booking-form-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    height: 475px;
+
+    background-image: url("../img/map.jpg");
+}
+
+.booking-form {
+    width: 568px;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffffff;
+}
+
+.hotel-search-btn {
+    width: 568px;
+    height: 86px;
+
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background-color: #766357;
+}
+
+.hotel-search-btn:hover {
+    background-color: #604e43;
+    color: #f4f3f2;
+}
+
+.hotel-search-btn:active {
+    background-color: #503e33;
+    color: #857871;
+}
+
+.find-btn {
+    height: 58px;
+    width: 458px;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.find-btn:hover{
+    background-color: #669ec0;
+}
+
+.find-btn:active{
+    background-color: #5496bd;
+    color: #88b6d1;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin-top: -15px;
+}
+
+.hashtag {
+    text-align: left;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    word-break: break-all;
+}
+
+.social-network {
+    width: 156px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.developers {
+    width: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .social_btn {
@@ -36,16 +427,14 @@
     background: #81b3d2 url("../img/youtube.png") no-repeat center;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0)
-  }
+.social_btn:hover{
+    background-color: #669ec0;
+}
+
+.social_btn:active{
+    background-color: #5496bd;
+}
+
 
 .dev_btn {
     width: 115px;
@@ -55,8 +444,11 @@
     display: block;
 }
 
+
+
 .abc {
     background: url("../img/blured-background.jpg") no-repeat center;
     height: 220px;
-    weight: 1200px;
+    width: 1200px;
 }
+  
