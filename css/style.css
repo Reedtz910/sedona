@@ -212,7 +212,7 @@ ul {
     content: "- ";
 }
 
-.reason-number::after {
+.reason-number::after  {
     content: " -";
 }
 
@@ -309,32 +309,110 @@ ul {
     color: #333333;
 }
 
-.booking-form-background {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1200px;
-    height: 475px;
+.search-hotel {
+    position: relative;
+}
 
-    background-image: url("../img/map.jpg");
+.modal-popup {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.modal-popup-show {
+    display: block;
 }
 
 .booking-form {
+    font-size: 14px;
+    font-weight: 700;
+
     width: 568px;
-    height: 395px;
+    min-height: 395px;
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0px 7px 15px  rgba(0, 1, 1, 0.15);
+}
 
+.long-form-field {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-right: 55px;
+    margin-left: 55px;
+    margin-bottom: 30px;
+}
+
+.form-field-entry {
+    margin-top: 55px;
+}
+
+.date-field {
+    font: inherit;
+    text-transform: uppercase;
+
+    width: 346px;
+    height: 38px;
+    border: 0;
+    padding-left: 13px;
+
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.short-form-field {
+    margin:0;
+}
+
+.num-field {
+    font: inherit;
+
+    width: 114px;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #f2f2f2;
+}
+
+.child-num-label {
+    margin: 0;
+    margin-right: 27px;
+}
+
+.adult-num-label {
+    margin: 0;
+    margin-right: 36px;
+}
+
+.long-form-field input[type="text"]:focus,
+.short-form-field input[type="number"]:focus {
+    outline: solid 2px #e5e5e5;
     background-color: #ffffff;
 }
+
 
 .hotel-search-btn {
     width: 568px;
     height: 86px;
+    text-transform: uppercase;
 
     font-size: 21px;
     font-weight: bold;
-    text-transform: uppercase;
 
     color: #ffffff;
     background-color: #766357;
@@ -353,6 +431,12 @@ ul {
 .find-btn {
     height: 58px;
     width: 458px;
+    margin-top: 54px;
+    margin-bottom: 55px;
+    margin-left: 55px;
+    margin-right: 55px;
+    padding: 0;
+    border: 0;
 
     font-size: 21px;
     line-height: 26px;
@@ -363,13 +447,45 @@ ul {
     background-color: #81b3d2;
 }
 
-.find-btn:hover{
+.find-btn:hover {
     background-color: #669ec0;
 }
 
-.find-btn:active{
+.find-btn:active {
     background-color: #5496bd;
     color: #88b6d1;
+}
+
+.calendar-btn {
+    position: absolute;
+    left: 93%;
+    padding: 0;
+    fill:#cacaca;
+
+
+    height: 22px;
+    width: 21px;
+    border: 0;
+}
+
+.calendar-btn:hover {
+    fill: #000000;
+    outline: none;
+}
+
+.calendar-btn:active {
+    fill: #81b3d2;
+    outline: none;
+}
+
+.calendar-btn:focus {
+    outline: none;
+}
+ 
+.map {
+    width: 1200px;
+    height: 475px; 
+    background-image: url("../img/map.jpg"); 
 }
 
 /* Footer */
